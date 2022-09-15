@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:padding="2dp"
+    app:cardCornerRadius="35dp"
+    app:cardElevation="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/shimmer_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:shimmer_animation_duration="1200"
+            app:shimmer_auto_start="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image_vlog"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/scenary"
+                    ></ImageView>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp">
+
+    <TextView
+
+        android:id="@+id/title_vlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/yeseva_one"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="ABCeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:padding="8dp">
+    </TextView>
+
+
+</androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/description_vlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/googlesans_medium"
+            android:text="ABCeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+            android:textStyle="bold"
+            android:textColor="#322E2E"
+            android:textSize="18sp"
+            android:maxLines="10"
+            android:textAlignment="textStart"
+            android:padding="14dp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

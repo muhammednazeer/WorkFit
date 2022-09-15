@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardBtn"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#251F1F"
+    app:cardCornerRadius="30dp"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        >
+        <ImageView
+            android:id="@+id/foodimage"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/apple"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/foodname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Default Text"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/white"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:weightSum="2">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_item_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/plus"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:cornerRadius="60dp"
+                app:elevation="5dp"
+                app:backgroundTint="#E8E5E5"
+                android:layout_weight="0.5"
+                >
+            </com.google.android.material.button.MaterialButton>
+            <TextView
+                android:id="@+id/num_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:padding="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                ></TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sub_item_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/minus"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:cornerRadius="60dp"
+                app:elevation="5dp"
+                app:backgroundTint="#E8E5E5"
+                android:layout_weight="0.5"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
